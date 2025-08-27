@@ -1,0 +1,66 @@
+/* detalles-servicios.css */
+/* Estilos para los enlaces de navegación */
+nav a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* Contenedor principal de detalles del servicio */
+.service-detail-container {
+    display: flex;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 8px;
+    max-height: 80vh;
+}
+
+/* Contenedor de la imagen del servicio */
+.service-image-container {
+    flex: 0 0 40%;
+    margin-right: 20px;
+}
+
+/* Imagen del servicio */
+.service-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Contenedor de texto del servicio */
+.service-text-container {
+    flex: 1;
+}
+
+.service-text-container a {
+    color: #555;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+/* Título del servicio */
+.service-title {
+    color: #8bc34a;
+    margin-bottom: 15px;
+}
+
+/* Descripción del servicio */
+.service-description {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .service-detail-container {
+        flex-direction: column;
+    }
+
+    .service-image-container {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}

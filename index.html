@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Servicios psicologigos maracay">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Servicios psicologigos en maracay</title>
+    <link rel="icon" href="assets/icons/logo-icon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <figure>
+                    <img src="assets/logo/logo-psi-nofondo.png" alt="Logo referencial de la Psicóloga Carla Alvarez" height="50px"
+                        width="50px">
+                </figure>
+
+                <h1><span onclick="irASeccion('seccion-inicio')">PSIENESTAR</span></h1>
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><span onclick="irASeccion('seccion-inicio')">Inicio</span></li>
+                    <li><span onclick="irASeccion('seccion-sobreMi')">Sobre mi</span></li>
+                    <li><span onclick="irASeccion('seccion-servicios')">Servicios</span></li>
+                    <li><button onclick="irASeccion('seccion-contacto')">CONTACTO</button></li>
+                    <li><button onclick="irASeccion('seccion-agenda')">AGENDAR</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seccion Inicio -->
+        <section id="seccion-inicio" class="hero">
+            <div class="hero-content">
+                <h2>Psicóloga Carla Alvarez</h2>
+                <p>Servicios terapeuticos profesionales</p>
+                <button onclick="irASeccion('seccion-servicios')">VER SERVICIOS</button>
+            </div>
+        </section>
+
+        <!-- Seccion Sobre Mi -->
+        <section id="seccion-sobreMi" class="sobre-mi-seccion">
+            <div class="sobre-mi-texto">
+                <p class="sobre-mi-pre-titulo">CUIDADO COMPASIVO</p>
+                <h2 class="sobre-mi-titulo">Tu compañia en el bienestar mental</h2>
+                <p class="sobre-mi-descripcion">
+                    La psicóloga Carla Álvarez ofrece servicios terapéuticos profesionales, basándose en su título en
+                    psicología para brindar una gama de servicios que incluyen evaluación psicológica, psicoterapia y
+                    apoyo. Con sede en Maracay, se dedica a ayudar a las personas a superar sus desafíos de salud mental
+                    y lograr una vida más saludable y plena. Carla también proporciona certificados de salud mental para
+                    aquellos que los necesiten, asegurando un enfoque integral del bienestar psicológico.
+                </p>
+                <span class="sobre-mi-contacto" onclick="irASeccion('seccion-contacto')">Ponerse en contacto</span>
+            </div>
+            <figure class="sobre-mi-imagen-contenedor">
+                <img class="sobre-mi-imagen" src="assets/images/sobreMi-img.jpg" alt="imagen de silla de consultorio">
+            </figure>
+        </section>
+
+        <!-- Seccion Servicios -->
+        <div class="servicios-fondo">
+        <section id="seccion-servicios" class="servicios-seccion">
+                    <div class="servicios-texto">
+                        <h2 class="servicios-titulo">SERVICIOS TERAPEUTICOS</h2>
+                        <p class="subtitulo-servicios">Empoderando tu bienestar mental</p>
+                    </div>
+
+                    <article class="servicio">
+                        <a href="/evaluacion-psico.html">
+                            <figure class="servicio1-img">
+                                <img src="assets/images/serv1-pre-img.png" alt="Evaluación psicológica">
+                            </figure>
+                            <h3>Evaluación <br> psicológica ></h3>
+                            <p>Evaluaciones integrales para comprender tu salud mental.</p>
+                            </a>
+                    </article>
+                    
+                    <article class="servicio">
+                        <a href="/psicoterapia.html">
+                            <figure class="servicio2-img">
+                                <img src="assets/images/serv2-pre-img.png" alt="Psicoterapia">
+                            </figure>
+                            <h3 class="h3-serv2">Terapia <br> psicológica ></h3>
+                            <p class="p-serv2">Transforma tu vida a través de sesiones de terapia personalizadas.</p>
+                            </a>
+
+                    </article>
+                    
+                    <article class="servicio">
+                        <a href="/certificado-sm.html">
+                            <figure class="servicio3-img">
+                                <img src="assets/images/serv3-pre-img.png" alt="Certificado de salud mental">
+                            </figure>
+                            <h3>Certificados de salud mental ></h3>
+                            <p>Obtenga documentación certificada de su estado de salud mental.</p>
+                            </a>
+                    </article>
+        </section>
+        </div>
+
+        <!-- Seccion Contacto -->
+        <section id="seccion-contacto" class="contacto-seccion">
+            <div class="contacto-izquierda">
+              <h2>Ponerse en contacto</h2>
+              <h3>Comienza tu camino hacia el bienestar hoy.</h3>
+              <form action="#" method="POST">
+                <div class="form-group">
+                  <label for="nombre">Nombre *</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo electrónico *</label>
+                  <input type="email" id="email" name="email" placeholder="email@website.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Número de teléfono *</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="7777-777-7777" required>
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuentame como puedo servirte y como te has sentido"></textarea>
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" id="permiso" name="permiso">
+                  <label for="permiso">Permito que este sitio web almacene mi envío para que puedan responder a mi consulta. *</label>
+                </div>
+                <button type="submit">ENVIAR</button>
+              </form>
+            </div>
+          
+            <div class="contacto-derecha">
+              
+              <div class="contacto-info">
+                        <div class="contacto-mapa">
+                            <iframe title="mapa de google" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3926.16880474764!2d-67.5837789239239!3d10.247965989870453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDE0JzUyLjciTiA2N8KwMzQnNTIuMyJX!5e0!3m2!1ses-419!2sve!4v1744050772248!5m2!1ses-419!2sve" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p><a href="https://maps.google.com/?q=6CX9%2B5GM,+Maracay,+Aragua" target="_blank"></a></p>
+                        </div>
+                        <h2>Ponerse en contacto</h2>   
+                        <div class="contacto-direccion">
+                            <img src="assets/icons/ubicacion-icon.png" alt="Icono de ubicación">
+                            <p><b>Ubicación<br>
+                            Maracay, Aragua Venezuela</b></p>
+                        </div>
+                        <div class="contacto-email">
+                            <img src="assets/icons/correo-icon.png" alt="Icono de email">
+                            <p><a href="mailto:psienestar@gmail.com">psienestar@gmail.com</a></p>
+                        </div>
+                        <div class="contacto-instagram">
+                            <img src="assets/icons/ig-icon.png" alt="Icono de Instagram">
+                            <p><a href="https://www.instagram.com/psienestar/" target="_blank">@psienestar</a></p>
+                        </div>
+                        <div class="contacto-telefono">
+                            <img src="assets/icons/tlf-icon.png" alt="Icono de teléfono">
+                            <p>Número de teléfono: <a href="https://api.whatsapp.com/send/?phone=%2B584243830191&text&type=phone_number&app_absent=0" target="_blank"> +58 424 3830191</a></p>
+                        </div>
+                        <div class="contacto-horario">
+                            <img src="assets/icons/horario-icon.png" alt="Icono de calendario y reloj">
+                            <p class="horario-titulo">Horario de atención:</p>
+                            <ul>
+                            <li>Online:</li>
+                            <li>Lunes a viernes: 9am a 4pm</li>
+                            <li>Sábados: 9am a 5pm</li>
+                            </ul>
+                            <ul>
+                            <li>Presencial:</li>
+                            <li>Lunes a viernes: 5pm a 8pm</li>
+                            <li>Sábados: 9am a 5pm</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            </section>
+            <section id="seccion-agenda">
+                    <!-- Google Calendar Appointment Scheduling begin -->
+                    <iframe class="agenda-google" title="agendar citas" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1fJ8wfz6KC_EIueMkN_optixaVwyKnsxW5gWtPqhjaNtMoMMg1QUPzkrUvxr35v-_vksguE58C?gv=true" style="border: 0" width="100%" height="800"></iframe>
+                    <!-- end Google Calendar Appointment Scheduling -->
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Anna Zarrelli. Todos los derechos reservados.</p>
+    </footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

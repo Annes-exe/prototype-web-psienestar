@@ -1,0 +1,516 @@
+/* styles.css */
+/* -------------------- Estilos para el header -------------------- */
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 15%;
+}
+
+.logo-container figure {
+  margin: 0;
+}
+
+.logo-container h1 {
+  margin: 0 0 0 10px;
+  font-family: Helvetica;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+  min-width: max-content;
+}
+
+nav span, nav button {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1em;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+nav span:hover, nav button:hover {
+  color: #32AA27;
+}
+
+nav button {
+  border: 2px solid #333;
+  padding: 8px 15px;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  nav li {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+}
+
+/* -------------------- Estilos para el body -------------------- */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* --------------------------------- Seccion Inicio ------------------------------- */
+#seccion-inicio {
+  min-height: 80vh;
+  background-image: linear-gradient(#00000080, #00000080), url("/assets/images/hero-img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+#seccion-inicio h2 {
+  color: #ffffff;
+  font-size: 3.5em;
+  font-family: 'Helvetica', sans-serif;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-left: 40%;
+}
+
+#seccion-inicio p {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: 'Helvetica', sans-serif;
+  margin-bottom: 20px;
+  margin-left: 40%;
+}
+
+#seccion-inicio button {
+  background-color: #32AA27;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: 'Helvetica', sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #0000004D;
+  margin-left: 40%;
+}
+
+/*------------------------------------- Seccion Sobre Mi ----------------------------------*/
+.sobre-mi-seccion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  min-height: 65vh;
+}
+
+.sobre-mi-texto {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.sobre-mi-pre-titulo {
+  color: #8bc34a;
+  font-size: 120%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sobre-mi-titulo {
+  font-size: 250%;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sobre-mi-descripcion {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Estilos para el enlace de contacto */
+.sobre-mi-contacto {
+  color: #555; 
+  cursor: pointer; 
+  text-decoration: underline; 
+  font-weight: bold; 
+}
+
+/* Contenedor de la imagen dentro de la sección */
+.sobre-mi-imagen-contenedor {
+  flex: 0 0 40%; 
+  margin-left: 30px; 
+}
+
+/* Estilos para la imagen dentro de la sección */
+.sobre-mi-imagen {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  border-radius: 5px; 
+}
+
+/* Estilos responsives */
+@media (max-width: 768px) {
+  .sobre-mi-seccion {
+      flex-direction: column; 
+      align-items: flex-start; 
+  }
+  .sobre-mi-texto {
+      padding-right: 0; 
+      margin-bottom: 20px; 
+  }
+  .sobre-mi-imagen-contenedor {
+      width: 80%; 
+      margin-left: 0; 
+      margin-top: 20px; 
+  }
+}
+
+/* ----------------------- Seccion Servicios --------------------------- */
+.servicios-seccion {
+  padding: 50px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.servicios-fondo {
+  background-color: #eef1ef; 
+  background-size: cover; 
+  min-height: 65vh; 
+}
+
+.servicios-texto {
+  margin-bottom: 40px; 
+  text-align: left; 
+}
+
+.servicios-titulo {
+  font-size: 120%; 
+  color: #8bc34a; 
+  margin-bottom: 10px; 
+}
+
+.subtitulo-servicios {
+  color: #333; 
+  font-size: 250%; 
+  font-weight: bold; 
+}
+
+/* Estilos para cada servicio (article) */
+.servicios-seccion article.servicio {
+  display: inline-block; 
+  width: calc(33% - 40px);
+  margin: 10px; 
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px #0000001A; 
+  text-align: left; 
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.servicio {
+    transition: transform 0.3s ease; /* Transición suave para la animación */
+}
+
+.servicios-seccion article.servicio:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 10px #555; 
+}
+
+/* Estilos para el enlace dentro del servicio */
+.servicios-seccion article.servicio a {
+  display: block; 
+  text-decoration: none; 
+  color: inherit; 
+  padding: 20px; 
+}
+
+/* Estilos para el título del servicio (h3) */
+.servicios-seccion article.servicio h3 {
+  color: #333; 
+  font-size: 1.4em; 
+  margin-top: 0; 
+  margin-bottom: 10px; 
+}
+
+/* Estilos para la descripción del servicio (p) */
+.servicios-seccion article.servicio p {
+  color: #555; 
+  font-size: 1em; 
+  line-height: 1.5; 
+  margin-bottom: 15px; 
+}
+
+/* Estilos para el contenedor de la imagen del servicio (figure) */
+.servicios-seccion article.servicio figure {
+  margin: 0; 
+  margin-bottom: 10px; 
+}
+
+/* Estilos para la imagen del servicio (img) */
+.servicios-seccion article.servicio figure img {
+  width: 100%; 
+  height: auto; 
+  display: block;
+  border-radius: 8px 8px 0 0; 
+}
+
+/* Estilos responsive */
+@media (max-width: 960px) {
+  .servicios-seccion article.servicio {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 600px) {
+  .servicios-seccion article.servicio {
+    width: 100%; 
+  }
+}
+
+/* --------------------------- Seccion Contacto ---------------------------------- */
+.contacto-seccion {
+  display: flex; 
+  padding: 50px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  gap: 40px; 
+  align-items: flex-start; 
+}
+
+.contacto-izquierda {
+  flex: 1; 
+  padding-right: 20px; 
+}
+
+.contacto-derecha {
+  flex: 1; 
+  padding-left: 20px; 
+}
+
+.contacto-izquierda h2,
+.contacto-derecha h2 {
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+.contacto-izquierda h3 {
+  color: #555; 
+  margin-bottom: 20px; 
+  font-weight: normal; 
+}
+
+/* Estilos para el formulario */
+.contacto-izquierda .form-group {
+  margin-bottom: 20px; 
+}
+
+.contacto-izquierda label {
+  display: block; 
+  margin-bottom: 5px; 
+  color: #333; 
+  font-weight: bold; 
+}
+
+.contacto-izquierda input[type="text"],
+.contacto-izquierda input[type="email"],
+.contacto-izquierda input[type="tel"],
+.contacto-izquierda textarea {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 1em; 
+  box-sizing: border-box; 
+}
+
+.contacto-izquierda textarea {
+  resize: vertical; 
+}
+
+.contacto-izquierda .form-check {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+
+.contacto-izquierda .form-check input[type="checkbox"] {
+  width: auto; 
+  margin-right: 10px; 
+}
+
+.contacto-izquierda button[type="submit"] {
+  background-color: #32aa27; 
+  color: #ffffff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 1em; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.contacto-izquierda button[type="submit"]:hover {
+  background-color: #288c21; 
+}
+
+/* --- Seccion Contacto (Lado Derecho) --- */
+.contacto-derecha {
+  flex: 1; 
+  padding: 20px; 
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  text-align: left; 
+}
+
+.contacto-derecha h2 {
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+.contacto-derecha .contacto-info > div {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 15px; 
+  gap: 15px; 
+}
+
+.contacto-derecha .contacto-info img {
+  height: 20px; 
+  width: auto; 
+  margin-right: 10px; 
+}
+
+.contacto-derecha .contacto-info a,
+.contacto-derecha .contacto-info p {
+  color: #333; 
+  text-decoration: none; 
+  margin-bottom: 0; 
+  text-align: left; 
+}
+
+.contacto-derecha .contacto-info a:hover {
+  text-decoration: underline; 
+}
+
+/* Estilos específicos para la ubicación */
+.contacto-derecha .contacto-direccion {
+  text-align: left; 
+}
+
+.contacto-derecha .contacto-direccion p {
+  margin-bottom: 2px; 
+}
+
+.contacto-derecha .contacto-direccion p:first-child {
+  font-weight: bold; 
+  margin-bottom: 2px; 
+}
+
+.contacto-derecha .contacto-direccion p:nth-child(2) {
+  font-weight: bold; 
+}
+
+.contacto-derecha .contacto-direccion p:last-child {
+  margin-bottom: 0; 
+}
+
+/* Estilos para el horario */
+.contacto-derecha .contacto-horario {
+  text-align: left; 
+}
+
+.contacto-derecha .contacto-horario p:first-child {
+  font-weight: bold; 
+  font-size: 1.1em; 
+  margin-bottom: 5px; 
+}
+
+.contacto-derecha .contacto-horario ul {
+  list-style: none;
+  padding-left: 20px; 
+  margin-bottom: 10px; 
+  text-align: left;
+}
+
+.contacto-derecha .contacto-horario ul li:first-child {
+  font-weight: bold; 
+}
+
+.contacto-derecha .contacto-horario ul li {
+  margin-bottom: 3px; 
+  text-align: left; 
+}
+
+.contacto-derecha .horario-titulo {
+  font-weight: bold; 
+}
+
+/* Estilos para el mapa */
+.contacto-derecha .contacto-mapa {
+  margin-top: 20px; 
+}
+
+.contacto-derecha .contacto-mapa iframe {
+  width: 100%; 
+  height: 250px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+}
+
+.contacto-derecha .contacto-mapa p {
+  margin-top: 10px; 
+  text-align: center; 
+  font-size: 0.9em; 
+}
+
+/* Seccion Agenda */
+#seccion-agenda .agenda-google {
+  align-items: center;
+}
